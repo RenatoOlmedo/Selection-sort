@@ -1,4 +1,6 @@
 def sort(data):
+    if data is None:
+        raise TypeError('Dados não podem ser None')
     posicaoSort = 0
     posicaoMenor = 0
     for i in data:
